@@ -1,0 +1,59 @@
+<div class="nav nav-bar">
+  <h1 class="page-title">
+      Administreaza continut
+  </h1>
+  <div class="btns-cnt">
+    <div class="btn nav-bnt" (click)="changeView('add')" [ngClass]="{'bordered': stats === false}">Adauga</div>
+    <div class="btn nav-bnt" (click)="changeView('input')" [ngClass]="{'bordered': stats === true}">Statistici</div>
+  </div>
+</div>
+<div class="page-cnt">
+  <div *ngIf="stats" class="statistics-page">
+      <table mat-table [dataSource]="dataSource" matSort class="table-cnt mat-elevation-z8">
+
+          <ng-container matColumnDef="firstName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Prenume </th>
+            <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="lastName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Nume </th>
+            <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> E-mail </th>
+            <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="phone">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Telefon </th>
+            <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="sex">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Sexul </th>
+              <td mat-cell *matCellDef="let element"> {{element.sex}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="age">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Varsta </th>
+              <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="agreement">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Deacord </th>
+              <td mat-cell *matCellDef="let element"> {{element.agreement}} </td>
+            </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    <app-progress-widget *ngIf="users" [users]="users"></app-progress-widget>
+  </div>
+  <div *ngIf="!stats" class="add-page">
+    <app-input></app-input>
+  </div>
+</div>
+

@@ -1,0 +1,154 @@
+<!-- <body class="landing is-preload">	 -->
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+	<!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+			<h2>BOGDAPROSTE</h2>
+			<p>Ajutam prin a dona cuvinte</p>
+			<ul class="actions special">
+        <li><button class="button primary" (click)="donateTime()">Doneaza</button></li>
+        <li><button class="button" (click)="moreDetails()">Mai multe</button></li>
+			</ul>
+		</div>
+		<a class="more scrolly"></a>
+	</section>
+	<!-- One -->
+	<section id="one" class="wrapper wrapper-custom style1 special">
+		<div class="status-bar-cnt">
+			<p class="status-bar-title">S au strans 4000/ 5000 de formulare </p>
+			<div>
+				<ngb-progressbar class="status-bar" type="info" [value]="75"></ngb-progressbar>
+			</div>
+			<div class="social-cnt">
+				<div class="title share-story-title">Povesteste despre noi</div>
+				<div class="social-icons">
+					<a href="https://facebook.com" target="_blank"><img class="social-icon" src="assets/images/facebook.svg" alt="" /></a>
+					<a href="https://instagram.com" target="_blank"><img class="social-icon" src="assets/images/instagram.svg" alt="" /></a>
+					<a href="https://twitter.com" target="_blank"><img class="social-icon" src="assets/images/twitter.svg" alt="" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="inner">
+			<div class="embed-video">
+				<iframe class="scrolling-iframe" width="100%" height="100%" scrolling="yes" [src]='embedSanitized' allowfullscreen
+				 style="overflow:visible;"></iframe>
+			</div>
+		</div>
+	</section>
+	<!-- Two -->
+	<section id="two" class="wrapper alt style2">
+		<section class="spotlight">
+			<div class="image"><img src="assets/images/parinti.jpg" alt="" /></div>
+			<div class="content">
+          <div>{{ content1.title }}</div>
+          <p> {{ content1.body }}</p>
+				<!-- <div>Parintii</div>
+				<p>Ne doare sa vedem cum se chinuie micutul nostru.Desi sunt extrem de saraci, parintii reusesc totusi sa-i tina pe
+					copii curati si sa-i trimita la scoala. Primesc, daca
+					li se ofera, ajutorul unor oameni cu suflet mare, impresionati de soarta lor. Si vor sa gaseasca o sursa de venit
+					pentru tatal familiei, ca sa poata macar sa racordeze locuinta la curent electric.
+
+					Izabela si Gheorghe Rau sunt impreuna de 20 de ani, timp in care au adus pe lume 12 copii. Barbatul a lucrat 15
+					ani in
+					mina din Valea Jiului, dar cand aceasta s-a inchis s-au intors cu totii pe meleagurile natale, in comuna Plopana,
+					din
+					judetul Bacau.
+
+					Pe o bucatica de pamant, care nici nu le apartine, au ridicat 2 camere din chirpici in care se inghesuie cu totii
+					si
+					isi duc cum pot zilele. Sunt prea departe de oras, asa ca n-au noroc de serviciu, dar nici n-au cerut niciodata
+					nimanui
+					nimic.
+
+					Barbatului i se frange inima cand vede cum copiii lui se chinuie sa invete la lumanare.</p> -->
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="image"><img src="assets/images/profesoara.jpg" alt="" /></div>
+			<div class="content">
+          <div>{{ content2.title }}</div>
+          <p> {{ content2.body }}</p>
+				<!-- <p>Este unul dintre cei mai sclipitori copii. Sper din inima ca acest tanar talent sa reuseasca!</p> -->
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="image"><img src="assets/images/prin_frig.jpg" alt="" /></div>
+			<div class="content">
+          <div>{{ content3.title }}</div>
+          <p> {{ content3.body }}</p>
+				<!-- <p> ...pe parcursul zilei merge prin frig si neinsotit pe o distanta de 10km </p> -->
+			</div>
+		</section>
+	</section>
+	<!-- Three -->
+	<!-- <section id="three" class="wrapper style3 special">
+		<div class="inner">
+			<header class="major">
+				<h2>Accumsan mus tortor nunc aliquet</h2>
+				<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+					fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+			</header>
+			<ul class="features">
+				<li class="icon fa-paper-plane-o">
+					<h3>Arcu accumsan</h3>
+					<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula
+						consequat consequat.</p>
+				</li>
+				<li class="icon fa-laptop">
+					<h3>Ac Augue Eget</h3>
+					<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula
+						consequat consequat.</p>
+				</li>
+				<li class="icon fa-code">
+					<h3>Mus Scelerisque</h3>
+					<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula
+						consequat consequat.</p>
+				</li>
+				<li class="icon fa-headphones">
+					<h3>Mauris Imperdiet</h3>
+					<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula
+						consequat consequat.</p>
+				</li>
+				<li class="icon fa-heart-o">
+					<h3>Aenean Primis</h3>
+					<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula
+						consequat consequat.</p>
+				</li>
+				<li class="icon fa-flag-o">
+					<h3>Tortor Ut</h3>
+					<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula
+						consequat consequat.</p>
+				</li>
+			</ul>
+		</div>
+	</section> -->
+
+	<!-- CTA -->
+	<!-- <section id="cta" class="wrapper style4">
+		<div class="inner">
+			<header>
+				<h2>Arcue ut vel commodo</h2>
+				<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+			</header>
+			<ul class="actions stacked">
+				<li><a href="#" class="button fit primary">Activate</a></li>
+				<li><a href="#" class="button fit">Learn More</a></li>
+			</ul>
+		</div>
+	</section> -->
+
+</div>
+<!-- </body> -->
+<!-- <give-modal *ngIf="showModal" (onSave)="addGive($event)"></give-modal> -->
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>

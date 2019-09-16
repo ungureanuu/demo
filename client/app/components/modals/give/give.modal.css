@@ -1,0 +1,344 @@
+
+/* Form */
+h4, p, input {
+    color: #000000;
+}
+
+form {
+    margin: 0 0 2em 0;
+}
+
+.close {
+    font-size: 2em;
+    box-shadow: none;
+    background: none;
+    position: relative;
+    margin: 0px 12px 0px 0px;
+    padding: 0px;
+    height: 3%;
+    width: 4%;
+    cursor: pointer;
+    color: #000000;
+    z-index: 3;
+}
+.modal-header {
+    display: block;
+}
+.mega-logo {
+    width: 80px;
+}
+.modal-title {
+    margin: 0.5em 0 0em 0em;
+    text-align: center;
+}
+label {
+    color: #000;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0 0 1em 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    /* background: rgba(144, 144, 144, 0.25); */
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 0 2px #21b2a6;
+    color: #000;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+}
+
+    input[type="text"]:invalid,
+    input[type="password"]:invalid,
+    input[type="email"]:invalid,
+    select:invalid,
+    textarea:invalid {
+        box-shadow: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        box-shadow: 0 0 0 2px #21b2a6;
+    }
+
+.select-wrapper {
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+    .select-wrapper:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+
+    .select-wrapper:before {
+        -moz-pointer-events: none;
+        -webkit-pointer-events: none;
+        -ms-pointer-events: none;
+        pointer-events: none;
+        color: #000;
+        content: '\f078';
+        display: block;
+        height: 2.75em;
+        line-height: 2.75em;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 2.75em;
+    }
+
+    .select-wrapper select::-ms-expand {
+        display: none;
+    }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 2.75em;
+}
+
+textarea {
+    padding: 0.75em 1em;
+}
+.opinion-input-title {
+    text-align: center;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display: block;
+    float: left;
+    width: 1em;
+    z-index: -1;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 2.4em;
+    padding-right: 0.75em;
+    position: relative;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+    background: rgba(144, 144, 144, 0.25);
+    color: #000;
+    border-radius: 3px;
+    content: '';
+    display: inline-block;
+    height: 1.65em;
+    left: 0;
+    line-height: 1.58125em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 1.65em;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+    background: #2e3842;
+    color: #000;
+    content: '\f00c';
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+    box-shadow: 0 0 0 2px #21b2a6;
+}
+
+input[type="checkbox"] + label:before {
+    border-radius: 3px;
+}
+
+input[type="radio"] + label:before {
+    border-radius: 100%;
+}
+
+/* //////////////////////////////// css for cool gradient pink form*/
+
+.rb-box {
+    width: 80%;
+    max-width: 420px;
+    margin: 50px auto;
+    padding: 1.3em;
+    background: #292942;
+    border-radius: .75em;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    box-shadow:
+      0 2px 2px rgba(243,49,128,.5),
+      0 0px 5px rgba(243,49,128,.15),
+      0 0px 4px rgba(0,0,0,.35),
+      0 5px 20px rgba(243,49,128,.25),
+      0 15px 50px rgba(243,49,128,.75),
+      inset 0 0 15px rgba(255,255,255,.05);
+  }
+
+  /* Custom Radio Button */
+  p {
+    font-size: .9em;
+  }
+
+  .rb {
+    padding: 16px 0;
+    text-align: center;
+    background: rgba(255,255,255,.03);
+    border-radius: .3em;
+  }
+
+  .rb-tab {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+  }
+
+  .rb-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .5em;
+    color: #FFFFFF;
+  }
+
+  .rb-spot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: ease .5s;
+  }
+
+  .rb-tab-active .rb-spot {
+    background: rgba(0,0,0,.35);
+    border: 2px solid rgba(243,49,128,.6);
+  }
+
+  /* Submit Button */
+  .button-box {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  button {
+    display: inline-block;
+    width: 80%;
+    margin-top: 1.2em;
+    padding: 1em;
+    font-size: .9em;
+    color: #D42D78;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .15em;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 5em;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+    transition:
+      color 0.6s,
+      box-shadow 0.3s,
+      transform 0.3s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+    color: #6f6f6f;
+  }
+
+  .btn-donate {
+      width: 100%;
+  }
+
+  .btn-donate:hover {
+      border: 1px solid #21b2a6;
+      background-color: transparent;
+  }
+
+  .give-modal-cnt {
+      margin: 1.75rem auto;
+  }
+
+  .no-padding {
+      padding: 0;
+  }
+
+  .logo-close {
+    transform: skewY(-7deg);
+    width: 50%;
+    padding: 3% 0 0 7%;
+  }
+
+  .title {
+    transform: skewY(-7deg);
+    margin: 0 0% 2% 10%;
+    padding: 0% 0 0 7%;
+    width: 80%;
+    border-top: 1px solid #21b2a6;
+  }
+
+  input[type="button"] .test-class .sv_next_btn {
+    background-color: red !important;
+}
+
+.sv_custom_text {
+    font-family: fantasy;
+    color: chocolate;
+}
+
+.table-custom {
+    color: #000000;
+}
+
+/* #surveyElement {
+   padding-top: 5%;
+} */
+
+#surveyElement {
+  padding: 0 20px !important;
+}

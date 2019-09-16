@@ -1,0 +1,94 @@
+<div class="input-cnt">
+    <div class="flexcontainer background">
+
+        <div class="smallitem">
+          <div class="signin-details">
+
+            <!-- <img class="customNavbarBrandLogin centeredElement" src="/assets/images/utm-logo.jpeg"> -->
+
+            <div class="centered loginBody">
+              <mat-card class="login-card">
+                <form [formGroup]="registerForm" name="form" (ngSubmit)="f.form.valid && save()" #f="ngForm">
+                  <table class="example-full-width" cellspacing="0">
+                    <tr>
+                      <td>
+                        <mat-form-field class="example-full-width customInput">
+                          <input matInput placeholder="Titlul" required formControlName="title">
+                        </mat-form-field>
+                      </td>
+                    </tr>
+                    <!-- <tr>
+                      <td>
+                        <mat-form-field class="example-full-width customInput">
+                          <input matInput placeholder="Rezumat" type="text" name="body" required formControlName="body">
+                        </mat-form-field>
+                      </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                          <mat-form-field class="example-full-width customInput">
+                            <input matInput placeholder="Continut" type="text" name="body" required formControlName="body">
+                          </mat-form-field>
+                        </td>
+                      </tr>
+                  </table>
+                </form>
+
+                <!-- <div class="flexcontainer additionalActions">
+                  <div class="halfCol">
+                    <mat-checkbox>Tine-ma minte</mat-checkbox>
+                  </div>
+                  <div class="halfCol forgotPassDiv">
+                    <span class="loginLink cursorPointer underlineHover forgotPass" (click)="goTo('forgot')">Ai uitat parola?</span>
+                  </div>
+                </div> -->
+
+                <mat-card-actions>
+                  <button class="centeredElement transparent-btn login-btn" mat-raised-button (click)="save(f)">Posteaza</button>
+                </mat-card-actions>
+
+              </mat-card>
+              <!-- <div class="login-body">
+                <form [formGroup]="registerForm" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+                  <div class="form-group">
+                    <label class="inputLabel">Email</label>
+                    <input type="text" formControlName="email" class="form-control customInput" />
+                  </div>
+                  <div class="form-group">
+                    <label class="inputLabel">Parola</label>
+                    <input type="text" formControlName="password" class="form-control customInput" />
+                  </div>
+                </form>
+              </div>
+              <div class="login-footer">
+                <div class="modalButtons">
+                  <div class="footer-btn-cnt">
+                    <button class="footer-btn" type="submit"
+                      (click)="onSubmit(f)">
+                      Acceseaza Contul
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+          </div>
+
+          <div class="privTerms">
+
+            <!-- <div>
+              Prin accesarea contului esti de acord cu <span class="loginLink cursorPointer underlineHover"
+                (click)="goTo('priv')">Politica de Convidentialitate
+              </span> si <span class="loginLink cursorPointer underlineHover" (click)="goTo('terms')">Termenii de utilizare</span> Bogdaproste
+            </div> -->
+
+          </div>
+        </div>
+
+        <div class="bigitem">
+          <div class="title">
+            <h5>Adaugam povestile si gandurile,<br> copiilor ce trec prin<br> cele mai grele momente</h5>
+          </div>
+        </div>
+      </div>
+</div>
